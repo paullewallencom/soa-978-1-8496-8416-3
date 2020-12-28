@@ -1,0 +1,7 @@
+4163_03_code_01.txt
+This file contains part of the WSDL that describes the OrderService. This snippet shows the definition of the OrderService.orderProduct operation. The snippet shows that faults can be defined per operation as well as their message definition.
+
+4163_03_code_02.txt
+This file contains an arbitrary invocation (request message) of the ContentManagementService.storeData operation. The request message contains the actual data to be stored, which is a snippet of binary data that contains the recording of a phone conversation between a Customer Care employee and a customer. Besides this voice recording that needs to be stored, the request message also contains relevant metadata that are important for the Customer Care department and parameters that are required by the underlying CMS to store this piece of data. As you can see from the request message quite a few parameters need to be provided on top of the actual data to invoke the storeDocument operation. Examples of such parameters are the data mark-up (e.g. MP3) and compression algorithm to be applied (e.g. LZ77). These parameters are nested in some cases meaning the parameter value itself is another set of parameters; for example the “Compression” parameters that are nested in the “StorageOptions” parameter. 
+
+The request message is used to show a service interface that is too generic.

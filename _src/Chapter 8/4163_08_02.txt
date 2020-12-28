@@ -1,0 +1,10 @@
+public class OrderServiceClient{
+ 
+	public static void main(String[] args) throws Exception {
+		URL url = new URL("http://vennster.nl/CRM/OrderService-1.0?wsdl");
+        QName qname = new QName("http://vennster.nl/CRM/OrderService-1.0/", "OrderService-1.0");
+		Service service = Service.create(url, qname);
+		OrderService orderService = service.getPort(OrderService.class);
+		System.out.println(orderService.orderProduct("ipod"));
+	}
+}

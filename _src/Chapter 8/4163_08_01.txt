@@ -1,0 +1,29 @@
+<wsdl:definitions name="OrderService-1.0"
+	targetNamespace="http://vennster.nl/CRM/OrderService-1.0"
+	xmlns:tns="http://vennster.nl/CRM/OrderService-1.0"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+	xmlns:msg="http://vennster.nl/CRM/Messages-1.0"
+	<wsdl:documentation> The Order will create an order for multiple orders
+		Version history
+		V1.0.0 Initial service description
+	</wsdl:documentation>
+	<wsdl:types>
+	…
+	</wsdl:types>
+	<wsdl:message>
+	…
+	</wsdl:message>
+	<wsdl:portType>
+	..
+	</wsdl:portType>
+	<wsdl:binding>
+	…
+	</wsdl:binding>
+	<wsld:service name=OrderService-1.0
+	<wsdl:port name="OrderServicePort"
+		binding="tns:OrderServiceSoapHttpBinding">
+	<soap:address location="http://localhost:7001/OrderService-1.0"/>
+	</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

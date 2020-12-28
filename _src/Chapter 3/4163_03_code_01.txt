@@ -1,0 +1,6 @@
+<wsdl:operation name=“orderProduct”>
+  <wsdl:input message=“order:OrderProductRequestMessage”/>
+  <wsdl:output message=“order:OrderProductResponseMessage”/>
+  <wsdl:fault message=“order:OrderProductNotInStockFaultMessage” name=“ OrderProductNotInStockFault”/>
+  <wsdl:fault message=“order:CustomerNotFoundFaultMessage” name=“CustomerNotFoundFault”/>
+</wsdl:operation>

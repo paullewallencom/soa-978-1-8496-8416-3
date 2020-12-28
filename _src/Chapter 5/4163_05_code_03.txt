@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<order:NewOrderEvent xmlns:order="http://www.foo.org/order">
+  <order:OrderId>789093609</cust:OrderId>
+</order:NewOrderEvent>

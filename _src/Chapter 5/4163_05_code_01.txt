@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<soapenv:Envelope 
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:cust="http://www.foo.org/customer">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cust:GetCustomerById>
+	    <cust:CustomerId>56080086</cust:CustomerId>
+      </cust:GetCustomerById>
+   </soapenv:Body>
+</soapenv:Envelope>
